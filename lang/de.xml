@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<category name="lexicon.acp.entry">
+		<item name="lexicon.acp.entry.category.sourceCategoryID"><![CDATA[Quellkategorie]]></item>
+		<item name="lexicon.acp.entry.category.targetCategoryIDs"><![CDATA[Zielkategorien]]></item>
+		<item name="lexicon.acp.entry.category.rights.copy"><![CDATA[Kategoriegruppenrechte kopieren]]></item>
+		<item name="lexicon.acp.entry.category.copy"><![CDATA[Kopieren]]></item>
+		<item name="lexicon.acp.entry.category.sourceCategoryID.error.noSelection"><![CDATA[Es muss ein Quellkategorie ausgewählt werden.]]></item>
+		<item name="lexicon.acp.entry.category.targetCategoryIDs.error.noSelection"><![CDATA[Es muss mindestens eine Zielkategorie ausgewählt werden.]]></item>
+	</category>
+
+	<category name="lexicon.acp.menu">
+		<item name="lexicon.acp.menu.link.lexicon.category.rights.copy"><![CDATA[Kategoriegruppenrechte kopieren]]></item>
+	</category>
+</language>
