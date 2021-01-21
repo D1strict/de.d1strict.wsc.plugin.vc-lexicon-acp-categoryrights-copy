@@ -6,7 +6,7 @@
 		<packagedescription><![CDATA[Plugin to copy the category rights of the VieCode Lexicon from one to another.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Plugin um die Kategorierechte von einer Kategorie in eine Andere zu kopieren.]]></packagedescription>
 		<packageurl><![CDATA[https://shop.d1strict.de/product/15-viecode-lexicon-kategoriegruppenrechte-kopieren/]]></packageurl>
-		<version><![CDATA[1.0.0]]></version>
+		<version><![CDATA[1.0.1]]></version>
 		<date><![CDATA[2020-10-08]]></date>
 		<license><![CDATA[Lizenz: <https://d1strict.de/free/>]]></license>
 	</packageinformation>
@@ -17,8 +17,8 @@
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="5.2.8"><![CDATA[com.woltlab.wcf]]></requiredpackage>
-    <requiredpackage minversion="6.2.4"><![CDATA[com.viecode.lexicon]]></requiredpackage>
+		<requiredpackage minversion="5.2.0"><![CDATA[com.woltlab.wcf]]></requiredpackage>
+		<requiredpackage minversion="6.2.4"><![CDATA[com.viecode.lexicon]]></requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
@@ -29,7 +29,7 @@
 		<api version="2018"/>
 	</compatibility>
 
-  <instructions type="install">
+	<instructions type="install">
 		<instruction application="lexicon" type="acpTemplate">acpTemplates.tar</instruction>
 		<instruction application="lexicon" type="file">files.tar</instruction>
 		<instruction type="language">lang/*.xml</instruction>
