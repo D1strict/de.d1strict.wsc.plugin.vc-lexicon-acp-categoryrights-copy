@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd" name="de.d1strict.wsc.plugin.vc-lexicon-acp-categoryrights-copy">
+	<packageinformation>
+		<packagename><![CDATA[VieCode Lexicon: Copy category group permissions]]></packagename>
+		<packagename language="de"><![CDATA[VieCode Lexicon: Kategoriegruppenrechte kopieren]]></packagename>
+		<packagedescription><![CDATA[Plugin to copy the category rights of the VieCode Lexicon from one to another.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Plugin um die Kategorierechte von einer Kategorie in eine Andere zu kopieren.]]></packagedescription>
+		<packageurl><![CDATA[https://shop.d1strict.de/product/15-viecode-lexicon-kategoriegruppenrechte-kopieren/]]></packageurl>
+		<version><![CDATA[1.0.1]]></version>
+		<date><![CDATA[2020-10-08]]></date>
+		<license><![CDATA[Lizenz: <https://d1strict.de/free/>]]></license>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[D1strict-Development, Revocode]]></author>
+		<authorurl><![CDATA[https://www.development.d1strict.de]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="5.2.0"><![CDATA[com.woltlab.wcf]]></requiredpackage>
+		<requiredpackage minversion="6.2.4"><![CDATA[com.viecode.lexicon]]></requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="6.0.0 Alpha 1"><![CDATA[com.woltlab.wcf]]></excludedpackage>
+	</excludedpackages>
+
+	<compatibility>
+		<api version="2018"/>
+	</compatibility>
+
+	<instructions type="install">
+		<instruction application="lexicon" type="acpTemplate">acpTemplates.tar</instruction>
+		<instruction application="lexicon" type="file">files.tar</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="acpMenu">xml/acpMenu.xml</instruction>
+	</instructions>
+
+  <instructions type="update" fromversion="1.0.0">
+    <instruction application="lexicon" type="acpTemplate">acpTemplates.tar</instruction>
+    <instruction application="lexicon" type="file">files.tar</instruction>
+    <instruction type="language">lang/*.xml</instruction>
+    <instruction type="acpMenu">xml/acpMenu.xml</instruction>
+  </instructions>
+</package>
