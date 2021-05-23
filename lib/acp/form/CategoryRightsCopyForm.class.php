@@ -3,6 +3,8 @@ namespace lexicon\acp\form;
 use lexicon\data\category\LexiconCategoryNodeTree;
 use wcf\form\AbstractForm;
 use wcf\system\acl\ACLHandler;
+use wcf\system\category\CategoryHandler;
+use wcf\system\category\CategoryPermissionHandler;
 use wcf\system\exception\UserInputException;
 use wcf\system\WCF;
 
@@ -101,9 +103,11 @@ class CategoryRightsCopyForm extends AbstractForm  {
 		// save ACL each target board
 		foreach($this->targetCategoryIDs AS $target) {
 			ACLHandler::getInstance()->save($target, $this->objectTypeID);
+			CategoryPermissionHandler::getInstance()->resetCache();
 		}
 
 		ACLHandler::getInstance()->disableAssignVariables();
+		CategoryHandler::getInstance()->reloadCache();
 		$this->saved();
 
 		// show success
